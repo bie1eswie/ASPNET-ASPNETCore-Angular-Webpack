@@ -6,9 +6,9 @@ import { AuthGuard } from '../shared/guards/authentication.guard';
 
 export const FoodRoutes: Routes = [
     {
-        path: '', component: MainFoodComponent, canActivate: [AuthGuard]
+        path: '', component: MainFoodComponent
     },
     {
-        path: ':foodId', component: FoodDetailsComponent, canActivate: [AuthGuard]
+        path: ':foodId', component: FoodDetailsComponent
     }
 ];

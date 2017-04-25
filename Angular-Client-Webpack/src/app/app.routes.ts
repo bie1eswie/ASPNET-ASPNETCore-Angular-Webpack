@@ -3,7 +3,7 @@ import { AuthGuard } from './shared/guards/authentication.guard';
 
 export const AppRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'food', loadChildren: './food/food.module#FoodModule', canLoad: [AuthGuard] },
+  { path: 'food', loadChildren: './food/food.module#FoodModule' },
   { path: 'account', loadChildren: './account/account.module#AccountModule' },
   {
     path: '**',
